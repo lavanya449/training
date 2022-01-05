@@ -1,0 +1,21 @@
+definition:
+The call by reference method of passing arguments to a function copies the reference of an argument into the formal parameter. Inside the function, the reference is used to access the actual argument used in the call. This means that changes made to the parameter affect the passed argument.
+
+program:
+#include <iostream>
+using namespace std;
+void swap(int &x, int &y);
+
+int main () 
+{
+   int a = 100;
+   int b = 200;
+ 
+   cout << "Before swap, value of a :" << a << endl;
+   cout << "Before swap, value of b :" << b << endl;
+
+   cout << "After swap, value of a :" << a << endl;
+   cout << "After swap, value of b :" << b << endl;
+ 
+   return 0;
+}
