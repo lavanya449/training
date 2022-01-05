@@ -1,0 +1,19 @@
+definition:
+A reference variable is an alias, that is, another name for an already existing variable. Once a reference is initialized with a variable, either the variable name or the reference name may be used to refer to the variable.
+
+
+program:
+#include<iostream>
+using namespace std;
+  
+int main()
+{
+  int x = 10;
+  int& ref = x;
+  ref = 20;
+  cout << "x = " << x << endl ;
+  x = 30;
+  cout << "ref = " << ref << endl ;
+  
+  return 0;
+}
